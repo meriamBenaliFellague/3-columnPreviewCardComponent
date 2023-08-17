@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Colors*/
+  /*Primary*/
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  /*Neutral*/
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+  --Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+  /*Typography*/
+  --Font-size: 15px;
+  --Font-family1: "Big Shoulders Display", cursive;
+  --Font-family2: "Lexend Deca", sans-serif;
+  --Font-weight-thin: 400;
+  --Font-weight2-bold: 700;
+}
+
+body {
+  background-color: var(--Very-light-gray);
+  height: 100vh;
+  width: 100vw;
+  font-size: var(--Font-size);
+  display: grid;
+  grid-template-columns: 19% 62% 19%;
+  grid-template-rows: 12% 76% 12%;
+}
+
+main {
+  background-color: var(--Dark-desaturated-blue);
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 100%;
+}
+
+.section1 {
+  background-color: var(--Bright-orange);
+}
+.section2 {
+  background-color: var(--Dark-cyan);
+}
+.section3 {
+  background-color: var(--Very-dark-cyan);
+}
+
+.section1,
+.section2,
+.section3 {
+  padding: 13%;
+}
+
+h2 {
+  font-family: var(--Font-family1);
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: var(--Very-light-gray);
+  margin: 25px 0px;
+}
+
+p {
+  font-family: var(--Font-family2);
+  font-weight: var(--Font-weight-thin);
+  color: var(--Transparent-white);
+  margin: 20px 0px;
+  line-height: 30px;
+}
