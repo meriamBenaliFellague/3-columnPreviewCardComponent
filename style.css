@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+   /*colors*/
+   --Bright-orange: hsl(31, 77%, 52%);
+   --Dark-cyan: hsl(184, 100%, 22%);
+   --Very-dark-cyan: hsl(179, 100%, 13%);
+   --Transparent-white: hsla(0, 0%, 100%, 0.75);
+   --Very-light-gray: hsl(0, 0%, 95%);
+
+   /*fonts*/
+   --font-size : 15px;
+   --font-family-txt : "Lexend Deca", sans-serif;
+   --font-Weights-txt : 400;
+   --font-family-titel : "Big Shoulders Display", sans-serif;
+   --font-Weights-titel : 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Very-light-gray);
+    height: 100vh;
+    width: 100vw;
+    font-size: var(--font-size);
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+main{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    border-radius: 25px;
+}
+
+section{
+    padding-left: 18%;
+    display: grid;
+    grid-template-rows: 122.5px 60px 150px 166.5px;
+}
+
+.img , .title{
+    display: grid;
+    place-items: center start;
+    color: var(--Very-light-gray);
+    font-family: var(--font-family-titel);
+}
+
+.txt{
+    display: grid;
+    place-items: center start;
+    max-width: 175px;
+    color: var(--Transparent-white);
+    font-family: var(--font-family-txt);
+}
+
+.btn{
+    display: grid;
+    place-items: center start;
+}
+
+button{
+    padding-inline: 35px;
+    padding-block: 16px;
+    border-radius: 25px;
+    border: 1px;
+}
+
+.section1 > .btn > button{
+    color: var(--Bright-orange);
+    font-family: var(--font-family-txt);
+}
+
+.section2 > .btn > button{
+    color: var(--Dark-cyan);
+    font-family: var(--font-family-txt);
+}
+
+.section3 > .btn > button{
+    color: var(--Very-dark-cyan);
+    font-family: var(--font-family-txt);
+}
+
+.section1{
+    background-color: var(--Bright-orange);
+}
+.section2{
+    background-color: var(--Dark-cyan);
+}
+.section3{
+    background-color: var(--Very-dark-cyan);
+}
